@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Serranito Games | Press kit</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> POR SI NO TENGO BS DESCARGADO, BS ONLINE CDN--> 
+    <link rel="stylesheet" href="css/bootstrap.min.css" /> <!-- ESTE PARA LOCAL, BS 4.0 -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+
+    <style> /*ESTILOS |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+      /* Fuentes descargadas*/
+      @font-face{
+        font-family: 'fuenteAtari';
+        src: url('fuentes/SF_Atarian_System.ttf'); 
+      }
+
+      @font-face {
+        font-family: 'fuenteGasalt';
+        src: url('fuentes/Gasalt_Black.ttf');
+      }
+
+      body{
+        background-color: black; 
+      }
+
+      #div1{
+        height: 250px;
+      }
+
+      #div3{
+        background: url(imagenes/h3.png) center no-repeat;
+        height: 105px;
+        background-size: 80% 100%;
+      }
+
+      #zonaBase{
+        padding-top: 50px;
+        padding-left: 70px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        width: 70%;
+        color: white;
+        font-family: 'fuenteGasalt';
+        font-size: 24px;
+        background: radial-gradient(#182544, #080917);
+        box-shadow: -1px 1px 30px 5px rgba(79,201,203,1);
+      }
+
+      footer{
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+      }  
+
+      .bg-colorEspec{
+        background-color: black;
+      }
+
+      @media screen and (max-width: 450px) {
+        #zonaBase{
+          padding: 20px;
+        }
+      }
+
+      @media screen and (max-width: 1050px) {
+        #zonaBase{
+          font-size: 20px;
+        }
+      } 
+
+      @media screen and (min-width: 990px) {
+        .navbar-brand{
+          display: none;
+        }
+      } 
+
+      @media screen and (max-width: 990px) {
+        #div1{
+          display: none;
+        }
+      }
+
+      #liActual{
+        background: rgb(13, 78, 131);
+        opacity: 0.41;
+      } 
+
+      #enActual{
+        color: black;
+      }
+
+      @media screen and (max-width: 991px) {
+        #liActual{
+          background-color: rgba(0, 0, 0, 0);
+        }
+        #enActual{
+          color:yellow;
+        }
+      } 
+      
+      ul.nav-pills {
+        position:absolute;
+        margin-left: 10%;
+        margin-top: 17%;
+      }
+
+      /*Oculto la barra lateral (scrollspy) cuando el ancho es más pequeño de 990px*/
+      @media screen and (max-width: 990px) {
+        ul.nav-pills{
+          display: none;
+        } 
+      }
+
+      .galeria{
+        height: 150px;
+        width: 250px;
+        padding-bottom: 7px;
+      }
+
+      .galeria:hover{
+        transform:scale(1.5);
+        transition: all 0.2s ease;   
+      }
+
+      .descargar{
+        border-left: 16px solid #2196F3;
+        background-color: #DDFFFF;
+        color: black;
+        padding: 10px;
+      }
+
+    </style> <!-- FIN ESTILOS ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  </head>
+  <body data-spy="scroll">
+
+    <div id="div1"> <!-- Zona logo-->
+        <br><br>
+        <img id="imgLogoSerranito" src="imagenes/logogrande.png" class="img-fluid mx-auto d-block" width="380" height="245">
+    </div>
+
+    <!--BARRA DE NAVEGACIÓN FIJA-->  
+    <nav class="navbar navbar-expand-lg bg-colorEspec navbar-dark sticky-top">
+        <a class="navbar-brand" href="#"><img id="imgLogoSerranito" src="imagenes/logochico.png" class="img-fluid mx-auto" width="80" height="50"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-auto" id="collapsibleNavbar">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="juegos.html">JUEGOS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="noticias.html">NOTICIAS</a>
+              </li>
+              <li class="nav-item" id="liActual">
+                  <a class="nav-link" id="enActual" href="presskit.html">PRESS KIT</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>  
+            </ul>
+        </div>  
+    </nav>
+
+    <br><br>
+
+    <!--BARRA SCROLLSPY QUE ME MARCA EL LUGAR ACTUAL CON EL SCROLL-->  
+    <nav class="col-sm-3 col-4 sticky-top" id="scrollspy">
+        <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="#sumario">Sumario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#descripcion">Descripción</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#videos">Vídeos</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#imagenes">Imágenes</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#logos">Logos/Iconos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#equipo">Equipo</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="div5"> <!-- Zona base-->
+
+        <div id="zonaBase" class="mx-auto d-block">
+
+            <h1><font color="blue">Serranito</font> <font color="red">Games</font> Press kit</h1>
+
+            <div id="sumario">
+                <h2 style="color:grey;">Sumario</h2>
+                <strong>Desarrollador:</strong> Serranito Games<br>
+                <strong>Dirección:</strong> C/ Inventada, 29 Mairena del Aljarafe, Sevilla, España 41927<br>
+                <strong>Fundación:</strong> 2016<br>
+                <strong>Social:</strong> <a href="https://twitter.com/" target="_blank">Twitter</a>
+                                          <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                                          <a href="https://es.linkedin.com/" target="_blank">LinkedIn</a>
+                                          <a href="https://www.youtube.com/" target="_blank">Youtube</a><br>
+                <strong>Prensa, negocios:</strong> info@serranitogames.com<br>
+                <strong>Web:</strong> serranitogames.com<br>
+                <strong>Lanzamientos: </strong> <a href="https://play.google.com/store/apps/details?id=com.tomorrow_studios.classic_sokoban.free_games.puzzle.casual_game.move_the_box.arcade" target="_blank">Sokoban: Move The Blocks</a><br><br>
+            </div>
+            
+            <div id="descripcion">
+                <h2 style="color:grey;">Descripción</h2>
+                Serranito Games es un joven estudio independiente de desarrollo de videojuegos, localizado en Mairena del Aljarafe, Sevilla.
+                Fundado aproximadamente en 2016 por dos entusiastas de los videojuegos, Julia Gimena y Víctor Montes, y su perro, Karioka.<br>
+                Desde entonces trabajamos en distintos proyectos poniendo en cada uno de ellos toda nuestra pasión y admiración por lo que hacemos.<br><br>
+                "¿Por qué llamáis Serranito Games a vuestro estudio?" Bueno, eso es una pregunta fácil: porque nos <u>encanta</u> comer serranitos.<br><br>
+            </div>
+
+            <div id="proyectos">
+                <h2 style="color:grey;">Proyectos</h2>
+                Actualmente el estudio cuenta con tres proyectos; uno acabado y dos de ellos en desarollo:<br><br>
+                <ul>
+                  <li>
+                      El proyecto finalizado se llama Sokoban: Move the Blocks y como su nombre indica, se trata del clásico juego de puzzles Sokoban, donde el jugador
+                      tiene que pensar estratégicamente sus movimientos para que, moviendo las cajas, consiga colocarlas en todos los huecos del nivel.<br>
+                      Tenéis más información en la sección de Juegos, o bien lo podéis descargar directamente desde las Stores: <a href="https://play.google.com/store/apps/details?id=com.tomorrow_studios.classic_sokoban.free_games.puzzle.casual_game.move_the_box.arcade" target="_blank">Google Play</a>
+                      <a href="https://www.apple.com/es/ios/app-store/" target="_blank">AppStore</a>
+                  </li>
+                  <li>
+                      El primero de nuestros proyectos en desarrollo aún no tiene nombre y se trata de un plataformas, donde el jugador tendrá que llegar a la meta
+                      en los diferentes niveles. No será tarea fácil pues a lo largo de ellos el jugador se encontrá con diferentes tipos de peligros. No hay una fecha
+                      estimada para el lanzamiento del juego, pero podeis echarle un breve vistazo a la demo que está disponible en la sección de juegos, o bien desde
+                      este enlace directo: <a href="DemoJuego/index.html">Jugar demo</a>  
+                  </li>
+                  <li>
+                      El segundo y último proyecto en desarollo, que tampoco tiene nombre, se trata de un juego del estilo one-tap basico. En él, manejas
+                      una pelotita que tiene que ir esquivando todo tipo de obstáculos en un ascenso vertical sin fin. Cuanto más lejos llegues, más puntuación
+                      sacarás en la tabla clasificatoria, desbloqueando nuevos objetos y características. Lamentablemente no podemos ofrecer mucha más información
+                      sobre el juego, ni tampoco disponemos de una demo jugable. ¡Estad al tanto de las nuevas noticias!
+                  </li>
+                </ul>
+            </div>
+            
+            <div id="videos">
+                <h2 style="color:grey;">Vídeos</h2>
+                <center><iframe width="80%" height="315" src="https://www.youtube.com/embed/GKxFQkVmeyE" frameborder="0"></iframe></center>
+                <center><iframe width="80%" height="315" src="https://www.youtube.com/embed/fnwe925QlGA" frameborder="0"></iframe>
+                <br><a href="#"><span class="descargar">Descargar vídeos como zip</span></a></center><br>
+            </div>
+
+            <div id="imagenes">
+                <h2 style="color:grey;">Imágenes / gifs</h2>
+                
+                <center>
+                    <img class="img-fluid galeria cols-sm-4 rounded" src="imagenes/img2.png">
+                    <img class="img-fluid galeria cols-sm-4 rounded" src="imagenes/imgsk1.png">
+                    <img class="img-fluid galeria cols-sm-4 rounded" src="imagenes/gif7.gif">
+                    <img class="img-fluid galeria cols-sm-4 rounded" src="imagenes/gif3.gif">
+                    <img class="img-fluid galeria cols-sm-4 rounded" src="imagenes/gif6.gif">
+                    <img class="img-fluid galeria cols-sm-4 rounded" src="imagenes/img1.png">
+                    <img class="img-fluid galeria cols-sm-4 rounded" src="imagenes/img4.png">
+                    <img class="img-fluid galeria cols-sm-4 rounded" src="imagenes/img10.png">
+                    <img class="img-fluid galeria cols-sm-4 rounded" src="imagenes/gif2.gif">
+                    <br><a href="#"><span class="descargar">Descargar imágenes como zip</span></a>
+                </center><br>
+            </div> 
+            
+            <div id="logos">
+                <h2 style="color:grey;">Logos / iconos</h2>
+                
+                <center>
+                    <img class="img-fluid galeria cols-sm-4 rounded" src="imagenes/logogrande.png">
+                    <img class="img-fluid galeria cols-sm-4 rounded" src="imagenes/logogrande2.png">
+                    <br><a href="#"><span class="descargar">Descargar logos como zip</span></a>
+                </center><br>
+            </div>
+            
+            <div id="equipo">
+                <h2 style="color:grey;">Equipo</h2>
+                <strong>Julia Gimena:</strong> diseñadora | julia@serranitogames.com<br>
+                <strong>Víctor Montes:</strong> programador | victor@serranitogames.com<br><br>
+            </div>
+            
+            <div id="contacto">
+                <h2 style="color:grey;">Contacto</h2>
+                <strong>Dirección:</strong> C/ Inventada, 29 Mairena del Aljarafe, Sevilla, España<br>
+                <strong>Social:</strong><a href="https://twitter.com/serranitogames" target="_blank">Twitter</a>
+                                        <a href="https://www.facebook.com/Serranito-Games-161714307883246/" target="_blank">Facebook</a>
+                                        <a href="https://es.linkedin.com/" target="_blank">LinkedIn</a>
+                                        <a href="https://www.youtube.com/" target="_blank">Youtube</a><br>
+                <strong>Correo:</strong> info@serranitogames.com<br>
+                <strong>Web:</strong> serranitogames.com
+            </div>
+            
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <footer>
+        <img id="imgLogoSerranito" src="imagenes/logochico.png" class="img-fluid mx-auto d-block" width="160" height="130">
+        <br><div id="enlacesFooter">
+          <a href="index.html">Inicio |</a>
+          <a href="nosotros.html">Sobre nosotros |</a>
+          <a href="juegos.html">Juegos |</a>
+          <a href="noticias.html">Noticias |</a>
+          <a href="presskit.html">Press Kit |</a>
+          <a href="contacto.html">Contacto</a>
+        </div><br>
+        <a href="https://twitter.com/serranitogames" target="_blank"><img src="imagenes/twitter.png" class="img-fluid"></a>
+        <a href="https://www.facebook.com/Serranito-Games-161714307883246/" target="_blank"><img src="imagenes/facebook.png" class="img-fluid" width="36" height="30"></a>
+        <a href="https://es.linkedin.com/" target="_blank"><img src="imagenes/linkedin.png" class="img-fluid" width="36" height="30"></a>&nbsp&nbsp
+        <a href="https://www.youtube.com/" target="_blank"><img src="imagenes/youtube.png" class="img-fluid" width="36" height="30"></a><br><br>
+        © 2018 Serranito Games
+    </footer>
+
+      
+  </body>
+</html>

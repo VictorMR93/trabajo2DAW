@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Serranito Games | Juegos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> POR SI NO TENGO BS DESCARGADO, BS ONLINE CDN--> 
+    <link rel="stylesheet" href="css/bootstrap.min.css" /> <!-- ESTE PARA LOCAL, BS 4.0 -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+
+    <style> /*ESTILOS |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+      /* Fuentes descargadas*/
+      @font-face{
+        font-family: 'fuenteAtari';
+        src: url('fuentes/SF_Atarian_System.ttf'); 
+      }
+
+      @font-face {
+        font-family: 'fuenteGasalt';
+        src: url('fuentes/Gasalt_Black.ttf');
+      }
+
+      body{
+        background-color: black; 
+      }
+
+      #div1{
+        height: 250px;
+      }
+
+      #div3{
+        background: url(imagenes/h3.png) center no-repeat;
+        height: 105px;
+        background-size: 80% 100%;
+      }
+
+      #zonaBase{
+        padding-top: 50px;
+        padding-left: 70px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        width: 70%;
+        color: white;
+        font-family: 'fuenteGasalt';
+        font-size: 24px;
+        background: radial-gradient(#182544, #080917);
+        box-shadow: -1px 1px 30px 5px rgba(79,201,203,1);
+      }
+
+      footer{
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+      }  
+
+      .bg-colorEspec{
+        background-color: black;
+      }
+
+      @media screen and (max-width: 450px) {
+        #zonaBase{
+          padding: 20px;
+        }
+      }
+
+      @media screen and (max-width: 1050px) {
+        #zonaBase{
+          font-size: 20px;
+        }
+      } 
+
+      @media screen and (min-width: 990px) {
+        .navbar-brand{
+          display: none;
+        }
+      } 
+
+      @media screen and (max-width: 990px) {
+        #div1{
+          display: none;
+        }
+      } 
+
+      #liActual{
+        background: rgb(13, 78, 131);
+        opacity: 0.41;
+      } 
+
+      #enActual{
+        color: black;
+      }
+
+      @media screen and (max-width: 991px) {
+        #liActual{
+          background-color: rgba(0, 0, 0, 0);
+        }
+        #enActual{
+          color:yellow;
+        }
+      } 
+      
+     #cartaJuegos{
+
+        text-align: center;
+
+     }
+
+     .card{
+        filter: grayscale(100%); 
+     }
+
+     .card:hover{
+        filter: grayscale(0%);
+        transform:scale(1.10);
+        transition: all 0.2s ease;
+     }
+
+     .modal{
+       color:black;  
+     }
+
+    </style> <!-- FIN ESTILOS ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  </head>
+  <body>
+
+    <div id="div1"> <!-- Zona logo-->
+        <br><br>
+        <img id="imgLogoSerranito" src="imagenes/logogrande.png" class="img-fluid mx-auto d-block" width="380" height="245">
+    </div>
+
+    <!--BARRA DE NAVEGACIÓN FIJA-->  
+    <nav class="navbar navbar-expand-lg bg-colorEspec navbar-dark sticky-top">
+        <a class="navbar-brand" href="#"><img id="imgLogoSerranito" src="imagenes/logochico.png" class="img-fluid mx-auto" width="80" height="50"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-auto" id="collapsibleNavbar">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item" id="liActual">
+                  <a class="nav-link" id="enActual" href="juegos.html">JUEGOS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="noticias.html">NOTICIAS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="presskit.html">PRESS KIT</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>  
+            </ul>
+        </div>  
+    </nav>
+
+    <br><br>
+
+    <div id="div5"> <!-- Zona base-->
+        
+        <div id="zonaBase" class="mx-auto d-block">
+          
+            <h1><center>Juegos en desarrollo</center></h1>  <!--                 JUEGOS EN DESARROLLO     -->
+            <font color="grey"><p><center>Aquí encontraréis todos nuestros juegos en desarrollo, algunos con demos disponibles</center></p></font>
+
+            <div class="row">
+
+                <div class="card mx-auto d-block" style="width:300px; background: linear-gradient(to top right, rgb(3, 35, 70), rgb(41, 94, 209))" id="cartaJuegos">
+                    <img class="card-img-top" src="imagenes/gif3.gif" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">Aún sin nombre</h4>
+                      <p class="card-text">¡Juego de plataformas aún en desarrollo!</p>
+                      <div class="progress" style="height:30px;">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:35%; font-size:20px;">35% Comp.</div>
+                      </div><br>
+                      <a href="DemoJuego/index.html" class="btn btn-primary">Jugar demo</a>
+                    </div>
+                </div>
+
+                <div class="card mx-auto d-block" style="width:300px; background: linear-gradient(to top left,#EA225D, grey);" id="cartaJuegos">
+                    <img class="card-img-top" src="imagenes/gif7.gif" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">Sin nombre</h4>
+                      <p class="card-text">Juego one-tap básico, ¡aún en desarollo!</p>
+                      <div class="progress" style="height:30px;">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:45%; font-size:20px;">45% Comp.</div>
+                      </div><br>
+                      <a href="#" class="btn btn-primary disabled">Demo no disponible</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <br><br>
+
+            <h1><center>Juegos finalizados</center></h1>  <!--                 JUEGOS FINALIZADOS     -->
+            <font color="grey"><p><center>¡Juegos terminados y disponibles para el público en sus respectivas stores!</center></p></font>
+
+            <div class="row">
+
+                <div class="card mx-auto d-block" style="width:300px; background: linear-gradient(to top right, rgb(121, 5, 5), rgb(168, 47, 47))" id="cartaJuegos">
+                  <img class="card-img-top" src="imagenes/gif6.gif" alt="Card image" style="width:100%; height:168px;">
+                  <div class="card-body">
+                    <h4 class="card-title">Sokoban</h4>
+                    <p class="card-text">¡Revive el clásico Sokoban para Android e iOS!</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalSokoban">Más información</a>
+                  </div>
+              </div>  
+
+                  <!-- Modal del sokoban |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+                  <div class="modal fade" id="modalSokoban">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                      
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h2 class="modal-title"><img class="img-fluid" src="imagenes/imgsokoban0.png" style="padding-right:20px" width="100px" height="100px">Sokoban: Move The Blocks</h2>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        
+                        <!-- Modal body -->
+                        <div class="modal-body" style="background-color:azure">
+                          
+                          <center><iframe width="80%" height="315" src="https://www.youtube.com/embed/GKxFQkVmeyE" frameborder="0"></iframe></center><br>
+
+                          <p style="width:90%; margin:auto">Implementación del clásico juego de puzzles Sokoban. El objetivo es empujar cajas a los lugares 
+                          de almacenamiento para resolver el rompecabezas. No siempre es tan fácil como parece, teniendo en cuenta que no se puede tirar 
+                          las cajas ni caminar sobre ellos. Puede empujar sólo una caja a la vez. Este juego de puzzles gratuito es un entrenador maravilloso
+                          para su cerebro y la lógica. ¡Así que descarga este juego de Sokoban y pruébalo!</p><br>
+
+                          <p style="width:90%; margin:auto">
+                            <strong>Imágenes:</strong>
+                            <br>
+                            <center><img class="img-fluid" src="imagenes/imgsokoban1.jpg" width="160" height="130">
+                            <img class="img-fluid" src="imagenes/imgsokoban2.jpg" width="160" height="130">
+                            <img class="img-fluid" src="imagenes/imgsokoban5.jpg" width="160" height="130">
+                            <img class="img-fluid" src="imagenes/imgsokoban4.jpg" width="160" height="130"></center>
+                          </p><br>
+
+                          <p style="width:90%; margin:auto">
+                              <strong>Características del juego:</strong>
+                              <br>
+                              <ul class="list-group" style="width:90%; margin:auto">
+                                  <li class="list-group-item list-group-item-action">Clásico estilo de juegos sokoban - mover las cajas!</li>
+                                  <li class="list-group-item list-group-item-action">No requiere conexión a Internet para jugar - se puede jugar sin conexión</li>
+                                  <li class="list-group-item list-group-item-action">Sistema ilimitado de deshacer</li>
+                                  <li class="list-group-item list-group-item-action">Más de 100 niveles interesantes</li>
+                                  <li class="list-group-item list-group-item-action">Diferentes niveles de dificultad</li>
+                              </ul>  
+                          </p>
+
+                          <p style="width:90%; margin:auto">
+                              <center>
+                                <a href="https://play.google.com/store/apps/details?id=com.tomorrow_studios.classic_sokoban.free_games.puzzle.casual_game.move_the_box.arcade" target="_blank"><img class="img-fluid" src="imagenes/googleplay.png"></a>
+                                <a href="https://www.apple.com/es/ios/app-store/" target="_blank"><img class="img-fluid" src="imagenes/appstore.png"></a>
+                              </center>
+                          </p>
+                            
+                        </div>
+                        
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <footer>
+        <img id="imgLogoSerranito" src="imagenes/logochico.png" class="img-fluid mx-auto d-block" width="160" height="130">
+        <br><div id="enlacesFooter">
+          <a href="index.html">Inicio |</a>
+          <a href="nosotros.html">Sobre nosotros |</a>
+          <a href="juegos.html">Juegos |</a>
+          <a href="noticias.html">Noticias |</a>
+          <a href="presskit.html">Press Kit |</a>
+          <a href="contacto.html">Contacto</a>
+        </div><br>
+        <a href="https://twitter.com/serranitogames" target="_blank"><img src="imagenes/twitter.png" class="img-fluid"></a>
+        <a href="https://www.facebook.com/Serranito-Games-161714307883246/" target="_blank"><img src="imagenes/facebook.png" class="img-fluid" width="36" height="30"></a>
+        <a href="https://es.linkedin.com/" target="_blank"><img src="imagenes/linkedin.png" class="img-fluid" width="36" height="30"></a>&nbsp&nbsp
+        <a href="https://www.youtube.com/" target="_blank"><img src="imagenes/youtube.png" class="img-fluid" width="36" height="30"></a><br><br>
+        © 2018 Serranito Games
+    </footer>
+
+      
+  </body>
+</html>

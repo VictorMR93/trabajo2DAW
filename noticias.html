@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Serranito Games | Noticias</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> POR SI NO TENGO BS DESCARGADO, BS ONLINE CDN--> 
+    <link rel="stylesheet" href="css/bootstrap.min.css" /> <!-- ESTE PARA LOCAL, BS 4.0 -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style> /*ESTILOS |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+      /* Fuentes descargadas*/
+      @font-face{
+        font-family: 'fuenteAtari';
+        src: url('fuentes/SF_Atarian_System.ttf'); 
+      }
+
+      @font-face {
+        font-family: 'fuenteGasalt';
+        src: url('fuentes/Gasalt_Black.ttf');
+      }
+
+      body{
+        background-color: black; 
+      }
+
+      #div1{
+        height: 250px;
+      }
+
+      #div3{
+        background: url(imagenes/h3.png) center no-repeat;
+        height: 105px;
+        background-size: 80% 100%;
+      }
+
+      #zonaBase{
+        padding-top: 50px;
+        padding-left: 70px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        width: 70%;
+        color: white;
+        font-family: 'fuenteGasalt';
+        font-size: 24px;
+        background: radial-gradient(#182544, #080917);
+        box-shadow: -1px 1px 30px 5px rgba(79,201,203,1);
+      }
+
+      footer{
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+      } 
+
+      .bg-colorEspec{
+        background-color: black;
+      }
+
+      @media screen and (max-width: 450px) {
+        #zonaBase{
+          padding: 20px;
+        }
+      }
+
+      @media screen and (max-width: 1050px) {
+        #zonaBase{
+          font-size: 20px;
+        }
+      } 
+
+      @media screen and (min-width: 990px) {
+        .navbar-brand{
+          display: none;
+        }
+      } 
+
+      @media screen and (max-width: 990px) {
+        #div1{
+          display: none;
+        }
+      }
+
+      #liActual{
+        background: rgb(13, 78, 131);
+        opacity: 0.41;
+      } 
+
+      #enActual{
+        color: black;
+      }
+
+      @media screen and (max-width: 991px) {
+        #liActual{
+          background-color: rgba(0, 0, 0, 0);
+        }
+        #enActual{
+          color:yellow;
+        }
+      } 
+
+      #divfechaNot{
+        background-color: #425FAB;
+        height: 120px;
+        width: 150px;
+        padding: 15px;
+        
+      }
+
+      #divNoticia{
+        background-color: #0B1221;  
+      }
+
+     .modal{
+       color:black;  
+     }
+
+     @media screen and (max-width: 750px) { /*para poner más pequeño el widget de facebook*/
+        #wgFace{
+          width: 300px;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        #wgFace{
+          width: 200px;
+        }
+      }
+      
+     
+    </style> <!-- FIN ESTILOS ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+  </head>
+  <body>
+
+    <div id="div1"> <!-- Zona logo-->
+        <br><br>
+        <img id="imgLogoSerranito" src="imagenes/logogrande.png" class="img-fluid mx-auto d-block" width="380" height="245">
+    </div>
+
+    <!--BARRA DE NAVEGACIÓN FIJA-->  
+    <nav class="navbar navbar-expand-lg bg-colorEspec navbar-dark sticky-top">
+        <a class="navbar-brand" href="#"><img id="imgLogoSerranito" src="imagenes/logochico.png" class="img-fluid mx-auto" width="80" height="50"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-auto" id="collapsibleNavbar">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="juegos.html">JUEGOS</a>
+              </li>
+              <li class="nav-item" id="liActual">
+                  <a class="nav-link" id="enActual" href="noticias.html">NOTICIAS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="presskit.html">PRESS KIT</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>  
+            </ul>
+        </div>  
+    </nav>
+
+    <br><br>
+
+    <div id="div5"> <!-- Zona base-->
+        
+        <div id="zonaBase" class="mx-auto d-block">
+          
+          <!-- ROW 1 |||||||||||||||||||||||||||||||||||||||-->
+          <div class="row">
+
+            <div class="col-md-2" id="divfechaNot">
+              <center><span class="display-4">14</span></center><center>Febrero 2018</center>
+            </div>  
+            <div class="col-md-10" id="divNoticia">
+
+                <!-- NOTICIA 1 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+                <p style="margin-top:20px; font-size:36px">DevBlog #01 - ¡Demo disponible del plataformas!</p>
+
+                Desde Serranito Games nos complace anunciaros que ya tenemos disponible una pequeña demo del juego de plataformas -aún sin nombre- que
+                estamos desarrollando. Aquí tenéis un adelanto con algunas imágenes, gifs y vídeos:<br><br>
+
+                <center><figure>
+                  <img class="img-fluid" src="imagenes/img8.png">
+                  <figcaption class="font-italic">Nuestro amiguito no lo tendrá nada fácil</figcaption>  
+                </figure></center>
+                
+                Por ahora, la demo dispone solo de 4 niveles de prueba. En ella se plantea un objetivo básico; alcanza la meta (bandera).<br>
+                <center><figure>
+                  <img class="img-fluid" src="imagenes/gif2.gif">
+                  <figcaption class="font-italic">Tu objetivo es alcanzar la bandera</figcaption> 
+                </figure></center>
+
+                A lo largo de los niveles te encontrarás con diferentes peligros, como los pinchos de la base del nivel o diferentes tipos de enemigos;
+                visualmente son idénticos, pero cuidado, unos quitan más que otros.<br><br>
+                <center><figure>
+                  <img class="img-fluid" src="imagenes/gif4.gif">
+                  <figcaption class="font-italic">No caigas a los pinchos... ¡Ni te dejes matar!</figcaption> 
+                </figure></center>
+
+                Eso es todo, si queréis saber más, tenéis la demo disponible en el apartado de juegos. La actualmente no funciona en Chrome, pues
+                actualmente no soporta WebGL, ¡utilizad Firefox en su lugar!<br><br>
+                <span class="font-italic">Equipo de Serranito Games</span>
+
+                <button type="button" class="btn btn-primary float-right mb-4" data-toggle="modal" data-target="#modalCom1">
+                    <span style="font-size:18px;">Comentarios</span> <span class="badge badge-light" style="font-size:14px;">5</span>
+                </button>
+
+                <!-- Modal comentarios 1 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->    
+                <div class="modal fade" id="modalCom1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                      
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Estás comentando... <mark style="background-color:#425FAB; color:white">DevBlog #01 - ¡Demo disponible del plataformas!</mark></h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img class="img-fluid" src="imagenes/coment.png" style="padding-right:20px" width="100px" height="100px"><mark>Rubén</mark> Buen trabajo chavales!
+                            <hr>
+                            <img class="img-fluid" src="imagenes/coment.png" style="padding-right:20px" width="100px" height="100px"><mark>Pepe</mark> Qué buena pinta!
+                            <hr>
+                            <img class="img-fluid" src="imagenes/coment.png" style="padding-right:20px" width="100px" height="100px"><mark>Marco Elio</mark> Enhorabuena por el curro Víctor, esto se merece un 10
+                            <hr>
+                            <img class="img-fluid" src="imagenes/coment.png" style="padding-right:20px" width="100px" height="100px"><mark>Anónimo</mark> Qué guay :)
+                            <hr>
+                            <img class="img-fluid" src="imagenes/coment.png" style="padding-right:20px" width="100px" height="100px"><mark>Lucía</mark> A darle duro!!
+                        </div>
+                        
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          
+                          <div class="form-group mx-auto">
+                            <input type="text" class="form-control" placeholder="Introduce tu nombre" style="margin-bottom:10px;">
+                            <textarea class="form-control" rows="3" cols="80" placeholder="¡Comenta la noticia!" style="margin-bottom:20px;"></textarea>  
+
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Enviar</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                          </div>
+  
+                        </div>
+                        
+                      </div>
+                    </div>
+                </div>
+                <!--FIN Modal comentarios 1 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||--> 
+
+            </div> 
+            <!-- FIN DIV NOTICIAS 1||||||||||||||||||||||||||||||-->
+
+          </div>
+          <!-- FIN ROW 1 ||||||||||||||||||||||-->
+
+          <br></br>
+
+          <!-- COMIENZO ROW 2 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+          <div class="row">
+              
+            <div class="col-md-2" id="divfechaNot">
+              <center><span class="display-4">12</span></center><center>Febrero 2018</center>
+            </div>  
+            <div class="col-md-10" id="divNoticia">
+
+                <!-- NOTICIA 2 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+                <p style="margin-top:20px; font-size:36px">¡Serranito Games estrena su nueva web!</p>
+
+                Desde Serranito Games os queremos anunciar que ya tenemos una web en marcha y operativa, ¡Esta sobre la que estáis navegando!<br>
+                En el estudio estamos llevando entre manos varios proyectos, y qué mejor forma de anunciaros las novedades, de enseñaros las imágenes,
+                vídeos y noticias que a través de ella.<br>
+                En la sección de "juegos" encontraréis todos los proyectos que estamos llevando a cabo, tanto los finalizados como los que están en
+                desarrollo, con información sobre ellos, enlaces a sus respectivas stores o demos si las hubiera.<br>
+                En la sección de "nosotros" encontraréis un breve resumen del estudio y los perfiles de los integrantes del mismo.<br>
+                En esta misma que estáis navegando, noticias, encontraréis todas las últimas novedades de Serrranito Games, tanto con artículos escritos
+                como una pequeña previsualización a nuestras redes sociales.<br>
+                Con el kit de prensa o "press kit", tendréis una información algo más detallada de la empresa y de los juegos si los hubiera; imágenes,
+                descargables, demos, fechas de lanzamiento...<br>
+                Por último, en la sección de contacto tendréis toda la información disponible para poneros en contacto con el estudio.<br><br>
+                Eso es todo por ahora, ¡un saludo!<br>
+                <span class="font-italic">Equipo de Serranito Games</span>
+
+                <button type="button" class="btn btn-primary float-right mb-4" data-toggle="modal" data-target="#modalCom2">
+                    <span style="font-size:18px;">Comentarios</span> <span class="badge badge-light" style="font-size:14px;">7</span>
+                </button>
+
+                <!-- Modal comentarios 2 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->    
+                <div class="modal fade" id="modalCom2">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                      
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Estás comentando... <mark style="background-color:#425FAB; color:white">¡Serranito Games estrena su nueva web!</mark></h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img class="img-fluid" src="imagenes/coment.png" style="padding-right:20px" width="100px" height="100px"><mark>Marco Elio</mark> Ostras Víctor qué pedazo de web, se merece un 10!!
+                            <hr>
+                            <img class="img-fluid" src="imagenes/coment.png" style="padding-right:20px" width="100px" height="100px"><mark>Anónimo</mark> Buena suerte con el proyecto!
+                            <hr>
+                            <img class="img-fluid" src="imagenes/coment.png" style="padding-right:20px" width="100px" height="100px"><mark>Tomás</mark> Suerte con el proyecto gente! Espero poder jugar algún juego vuestro dentro de poco! jeje
+                            <hr>
+                            <img class="img-fluid" src="imagenes/coment.png" style="padding-right:20px" width="100px" height="100px"><mark>Gonzalo</mark> Suerte!!
+                            <hr>
+                            <img class="img-fluid" src="imagenes/coment.png" style="padding-right:20px" width="100px" height="100px"><mark>Anónimo</mark> Os ha quedado fenomenal, espero que tengáis mucha suerte! Un abrazo a todos
+                            <hr>
+                            <img class="img-fluid" src="imagenes/coment.png" style="padding-right:20px" width="100px" height="100px"><mark>Isabel</mark> Qué bonita :D
+                            <hr>
+                            <img class="img-fluid" src="imagenes/coment.png" style="padding-right:20px" width="100px" height="100px"><mark>Anónimo</mark> Último mensaje inventado, que ya estoy aburrido de inventármelos
+                        </div>
+                        
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            
+                            <div class="form-group mx-auto">
+                              <input type="text" class="form-control" placeholder="Introduce tu nombre" style="margin-bottom:10px;">
+                              <textarea class="form-control" rows="3" cols="80" placeholder="¡Comenta la noticia!" style="margin-bottom:20px;"></textarea>  
+  
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Enviar</button>
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+    
+                        </div>
+                        
+                      </div>
+                    </div>
+                </div>
+                <!--FIN Modal comentarios 2 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||--> 
+
+            </div> 
+            <!-- FIN DIV NOTICIAS 2||||||||||||||||||||||||||||||-->
+
+          </div>
+          <!-- FIN ROW 2 ||||||||||||||||||||||-->
+
+          <br>
+
+          <center><h1>¡Lo último también a través de las redes sociales!</h1></center>
+     
+          <div class="row">
+            <div class="container">
+                <!--WIDGET TWITTER-->
+                <center><a class="twitter-timeline" data-width="400" data-theme="light" href="https://twitter.com/SerranitoGames?ref_src=twsrc%5Etfw">Tweets by SerranitoGames</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>               
+                <!--WIDGET FACEBOOK-->
+                <iframe id="wgFace" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSerranito-Games-161714307883246%2F&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></center>
+            </div>    
+          </div> 
+
+        </div>
+        
+    </div>
+
+    <br><br>
+
+    <footer>
+        <img id="imgLogoSerranito" src="imagenes/logochico.png" class="img-fluid mx-auto d-block" width="160" height="130">
+        <br><div id="enlacesFooter">
+          <a href="index.html">Inicio |</a>
+          <a href="nosotros.html">Sobre nosotros |</a>
+          <a href="juegos.html">Juegos |</a>
+          <a href="noticias.html">Noticias |</a>
+          <a href="presskit.html">Press Kit |</a>
+          <a href="contacto.html">Contacto</a>
+        </div><br>
+        <a href="https://twitter.com/serranitogames" target="_blank"><img src="imagenes/twitter.png" class="img-fluid"></a>
+        <a href="https://www.facebook.com/Serranito-Games-161714307883246/" target="_blank"><img src="imagenes/facebook.png" class="img-fluid" width="36" height="30"></a>
+        <a href="https://es.linkedin.com/" target="_blank"><img src="imagenes/linkedin.png" class="img-fluid" width="36" height="30"></a>&nbsp&nbsp
+        <a href="https://www.youtube.com/" target="_blank"><img src="imagenes/youtube.png" class="img-fluid" width="36" height="30"></a><br><br>
+        © 2018 Serranito Games
+    </footer>
+
+      
+  </body>
+</html>
